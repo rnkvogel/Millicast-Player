@@ -15,5 +15,4 @@ https://YOUR_WEB_SITE/player/?id=ANY_NAME
 
 Customize the player as you want.
 
-https://scriptgenerator.net/simple-html5-embed-video-player/
 
