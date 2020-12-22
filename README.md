@@ -4,7 +4,7 @@ You can create account here https://millicast.com/
 
 1.This player includes a mute image overlay.
 
-2.Offline reconnect for nwtwork disconnect.
+2.Offline reconnect for network disconnect.
 
 3 Viewer count.
 
