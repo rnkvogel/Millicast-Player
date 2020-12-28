@@ -1,4 +1,4 @@
-const apiPath  = 'https://director.millicast.com/api/director/subscribe';
+  const apiPath  = 'https://director.millicast.com/api/director/subscribe';
   const turnUrl  = 'https://turn.millicast.com/webrtc/_turn';
 
   let params     = new URLSearchParams(document.location.search.substring(1));
