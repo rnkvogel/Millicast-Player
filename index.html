@@ -9,8 +9,8 @@ let params     = new URLSearchParams(document.location.search.substring(1));
 function startPlayer(){
 var accountId = document.getElementById("viewTxt").value;
 var streamName = document.getElementById("streamTxt").value;
-//var subToken = document.getElementById("subToken").value;
-var url = "https://rnkvogel.github.io/Millicast-Player/player/?id=" +  streamName + "&account=" + accountId;
+var subToken = document.getElementById("subToken").value;
+var url = "https://rnkvogel.github.io/Millicast-Player/player/?id=" +  streamName + "&account=" + accountId + "&token" + subToken ;
  window.open(url);
  }
 
@@ -18,7 +18,7 @@ var url = "https://rnkvogel.github.io/Millicast-Player/player/?id=" +  streamNam
 
 <body>
  <h1>Millicast Player Demo</h1>
- <p>Secure token not required. Please enter your stream name and account id</p>
+ <p>Secure token no required if publisher is not set for secure stream. Please enter your stream name and account id</p>
 <div id="form" class="account-data">
 <input id="tokenTxt" class="base-input" type="text" value="" placeholder="Secure Token" />
 <input id="viewTxt" class="base-input" type="text" value="" placeholder="Account Id"/>
