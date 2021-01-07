@@ -31,4 +31,13 @@ https://YOUR_WEB_SITE/player/?id=ANY_NAME
 
 Customize the player as desired.
 
+If you secured your stream and requiring a token.
+https://reqbin.com/curl
+
+
+curl -H "Authorization: Bearer YOUR_API_CODE_FROM_PORTAL_ACCOUNT_TAB" \
+      -H "Content-Type: application/json" \
+     https://api.millicast.com/api/subscribe_token/ \
+     -d '{"subscribeRequiresAuth": true, "label": "STREAM_LABEL", "streams": [{"streamName": "STREAM_NAME"}]}'
+
 
