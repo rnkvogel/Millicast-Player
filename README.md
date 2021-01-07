@@ -23,7 +23,7 @@ DEMO:
 
 https://rnkvogel.github.io/Millicast-Player/
 
-Note secure token is not enabled on demo.
+Note secure token is not needed if youdid not enable it.
 
 Place the folder on your website 
 
@@ -31,7 +31,7 @@ https://YOUR_WEB_SITE/player/?id=ANY_NAME
 
 Customize the player as desired.
 
-If you secured your stream and requiring a token.
+If you secured your stream requiring a token.
 https://reqbin.com/curl
 
 
