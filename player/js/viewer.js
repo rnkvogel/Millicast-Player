@@ -380,6 +380,20 @@
     document.addEventListener('DOMContentLoaded', ready);
   }
 var wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+if (window.WebKitPlaybackTargetAvailabilityEvent) {
+     video.addEventListener('webkitplaybacktargetavailabilitychanged',
+         function(event) {
+             switch (event.availability) {
+             case "available":
+                 airPlayButton.hidden = false;
+                 airPlayButton.disabled = false;
+                 break;
+             case "not-available":
+                 airPlayButton.hidden = true;
+                 airPlayButton.disabled = true;
+                 break;
+} }); 
+}
 
 (async () => {
   v.srcObject = await navigator.mediaDevices.getUserMedia({player: true});
