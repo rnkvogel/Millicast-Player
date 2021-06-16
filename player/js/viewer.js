@@ -359,11 +359,16 @@
   function ready() {
     vidMsg = document.getElementById('msgOverlay');
     let v = document.getElementsByTagName('video')[0];
-    if (v) {
-      v.addEventListener("click", evt => {
-        v.play();
-      });
-    }
+    //if (v) {
+     // v.addEventListener("click", evt => {
+       // v.play();
+      //});
+        if (v.paused)
+                v.play();
+            else
+                v.pause();
+   //}
+    
     //connect();
     // get a list of Xirsys ice servers.
     getICEServers()
