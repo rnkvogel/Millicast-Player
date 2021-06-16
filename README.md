@@ -40,4 +40,7 @@ curl -H "Authorization: Bearer YOUR_API_CODE_FROM_PORTAL_ACCOUNT_TAB" \
      https://api.millicast.com/api/subscribe_token/ \
      -d '{"subscribeRequiresAuth": true, "label": "STREAM_LABEL", "streams": [{"streamName": "STREAM_NAME"}]}'
 
-
+Set up responsive iframe
+<div class="container">
+  <iframe class="responsive-iframe" src="YOURSITE.COM/playerpath.></iframe>
+</div>
