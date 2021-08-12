@@ -5,6 +5,7 @@
   let accountId  = params.get('account');
   let streamName = params.get('id');
   let subToken = params.get('token');// SubscribingToken - placed here for ease of testing, should come from secure location. (php/nodejs)
+  let preVideo = "vides/audiosync.mp4";
 
   console.log('Millicast Viewer Stream: ', streamName);
 
@@ -401,6 +402,12 @@ if (window.WebKitPlaybackTargetAvailabilityEvent) {
 }
 
 (async () => {
+     let v = document.getElementsByTagName('video')[0];
+    if (v) {
+      
+     // v.addEventListener("click", evt => {
+       // v.play();
+      //});
   v.srcObject = await navigator.mediaDevices.getUserMedia({player: true});
   while (true) {
     console.log(v.currentTime);
