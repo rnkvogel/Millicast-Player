@@ -209,11 +209,12 @@
             if (vidWin) {
               vidWin.pause();
               // vidWin.removeAttribute('src'); // empty source
-              vidWin.src = 'preVideo'; //test VOD file
+              vidWin.src = ''; //test VOD file
               vidWin.load();
               // connect();
               doReconnect();
             }
+            
           }
           break;
       }
@@ -365,6 +366,7 @@
        // v.play();
       //});
         if (v.paused)
+          v = preVideo;
                 v.play();
             else
                 v.pause();
@@ -403,6 +405,7 @@ if (window.WebKitPlaybackTargetAvailabilityEvent) {
 
 (async () => {
     // let v = document.getElementsByTagName('video')[0];
+  
     //if (v) {
       
      // v.addEventListener("click", evt => {
