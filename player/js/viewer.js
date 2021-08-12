@@ -366,7 +366,7 @@
        // v.play();
       //});
         if (v.paused)
-          v = preVideo;
+
                 v.play();
             else
                 v.pause();
