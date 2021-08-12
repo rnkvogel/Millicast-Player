@@ -209,7 +209,7 @@
             if (vidWin) {
               vidWin.pause();
               // vidWin.removeAttribute('src'); // empty source
-              vidWin.src = '';
+              vidWin.src = 'preVideo'; //test VOD file
               vidWin.load();
               // connect();
               doReconnect();
