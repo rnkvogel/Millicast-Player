@@ -402,7 +402,7 @@ if (window.WebKitPlaybackTargetAvailabilityEvent) {
 }
 
 (async () => {
-     let v = document.getElementsByTagName('video')[0];
+    // let v = document.getElementsByTagName('video')[0];
     if (v) {
       
      // v.addEventListener("click", evt => {
